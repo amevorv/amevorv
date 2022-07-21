@@ -1,0 +1,129 @@
+@import "general.css";
+
+#nav{
+padding-right: 5vw;
+}
+
+#hero-quote{
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.but{
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+#right-hero{
+	margin: 5% 5% 0% 0%;
+}
+
+#stack div:first-child{
+	margin-bottom: 4vh;
+}
+
+#stacks div{
+	margin-top: 4vh;
+	border-radius: 10px;
+	font-size: large;
+}
+
+#stacks div div{
+	padding:  1% 2% 1% 2%;
+}
+
+#buttons button{
+	padding: 5px;
+	min-width: 10vw;
+	font-size: x-large;
+	margin-bottom: 1vh;
+	margin-right: 1vw;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	padding: 1% 2% 1% 2%;
+}
+
+.stacklist p:last-child{
+	margin-top: 10%;
+	font-size: medium;
+}
+
+.rightstack div{
+	min-height: 30vh;
+}
+
+
+.leftstack div{
+	min-height: 45vh;
+}
+
+
+.leftstack .stacklist p:last-child{
+	margin-top: 20%;
+}
+
+#socials{
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+.socialItems div{
+	padding-right: 5%;
+	padding-left: 2%;
+}
+
+.nobul li{
+	font-weight: bold;
+	padding-left: 3vw;
+}
+.nobul li:first-child{
+	padding-left: 0%;
+}
+
+.cbcol1{
+	background-color: #F2E9E9;
+}
+.cbcol2{
+	background-color: #BEEF9D;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: overline;
+}
+
+button:hover{
+	background-color: grey;
+}
+
+.imageShow{
+	min-height: 60vh;
+	width: 50vw
+}
+
+.imageM{
+	width:18vw; 
+	height:auto
+}
+
+.imageL{
+	width:25vw; 
+	height:auto
+}
+
+.imageS{
+	width:10vw; 
+	height:auto
+}
+
+#welcomeUX{
+	width: 100vw;
+}
+
+#hero-design div:last-child{
+	transform: translate(0, -50px);
+} 
