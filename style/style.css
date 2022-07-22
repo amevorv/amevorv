@@ -73,6 +73,10 @@ padding-right: 5vw;
 	padding-left: 2%;
 }
 
+.socialItems div svg{
+	margin: 50px 0% 5% 20%;
+}
+
 .nobul li{
 	font-weight: bold;
 	padding-left: 3vw;
@@ -127,3 +131,7 @@ button:hover{
 #hero-design div:last-child{
 	transform: translate(0, -50px);
 } 
+
+#icon{
+	right: 7vw;
+}
