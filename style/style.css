@@ -35,7 +35,7 @@ padding-right: 5vw;
 #buttons button{
 	padding: 5px;
 	min-width: 10vw;
-	font-size: x-large;
+	font-size: large;
 	margin-bottom: 1vh;
 	margin-right: 1vw;
 	background-color: black;
@@ -50,12 +50,12 @@ padding-right: 5vw;
 }
 
 .rightstack div{
-	min-height: 30vh;
+	min-height: 150px;
 }
 
 
 .leftstack div{
-	min-height: 45vh;
+	min-height: 250px;
 }
 
 
@@ -69,6 +69,7 @@ padding-right: 5vw;
 }
 
 .socialItems div{
+	padding-bottom: 5%;
 	padding-right: 5%;
 	padding-left: 2%;
 }
@@ -100,6 +101,10 @@ a:hover{
 	text-decoration: overline;
 }
 
+button a:visited{ 
+	color: white;
+}
+
 button:hover{
 	background-color: grey;
 }
@@ -127,6 +132,9 @@ button:hover{
 #welcomeUX{
 	width: 100vw;
 }
+#hero-design {
+	height: 400px;
+}
 
 #hero-design div:last-child{
 	transform: translate(0, -50px);
@@ -134,4 +142,55 @@ button:hover{
 
 #icon{
 	right: 7vw;
+}
+
+@media screen and (max-width: 1000px){//smaller than
+ .imageShow{
+	min-height: 60vh;
+	width: 100vw
+}
+
+.imageM{
+	width:36vw; 
+	height:auto
+}
+
+.imageL{
+	width:50vw; 
+	height:auto
+}
+
+.imageS{
+	width:20vw; 
+	height:auto
+}
+
+	
+}
+
+@media screen and (min-width: 1000px){//bigger than
+ .imageShow{
+	min-height: 60vh;
+	width: 50vw
+}
+
+.imageM{
+	width:18vw; 
+	height:auto
+}
+
+.imageL{
+	width:25vw; 
+	height:auto
+}
+
+.imageS{
+	width:10vw; 
+	height:auto
+}
+
+}
+
+@media screen and (min-width: 820px){
+	
 }
