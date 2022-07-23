@@ -1,3 +1,4 @@
+
 *{box-sizing: border-box; height: auto;/*word-wrap: break-word;text-overflow: ellipsis; scroll-behavior: smooth;*/}
 
 
@@ -60,7 +61,7 @@
 .colw{color: white}.colb{color: black}.colr{color: red}.colo{color: orange}.coly{color: yellow}.colg{color: green}.colbe{color: blue}.coli{color: indigo}.colv{color: voilet}.colp{color: pink}.colgy{color: grey}
 .bcolw{background-color: white}.bcolb{background-color: black}.bcolr{background-color: red}.bcolo{background-color: orange}.bcoly{background-color: yellow}.bcolg{background-color: green}.bcolbe{background-color: blue}.bcoli{background-color: indigo}.bcolv{background-color: voilet}.bcolp{background-color: pink}.bcolgy{background-color: grey}
 
-
+.bn{border: none;}
 .bc{border-collapse:collapse}
 /**/.back{background: lightblue url("img_tree.gif") no-repeat fixed center;}/*background-color background-image background-position background-size background-repeat background-origin background-clip background-attachment*/
 /**/.bor{border: 4px dotted blue;}/*border-width border-style (required) border-color*/
