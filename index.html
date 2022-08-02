@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@
 
 	<div id="right-hero" class = "posr w3 fr h3 z3">
 		<div id="hero-quote" class="cbcol1 fs5 pad1 mw8 tac fr"><p>"A developer with over 6 years development experience and counting..."</p></div>
-		<div><a target="blank" href="https://wa.me/233245296501"><button id="hero-but" class="but bcolb colw fr magt2 padl2 padr2 lh fs6" onclick="">Hire Me</button></a></div>
+		<div><a target="blank" href="https://wa.me/233245296501"><button id="hero-but" class="but bcolb colw fr magt2 padl2 padr2 lh fs6" onclick="">Let's Talk</button></a></div>
 	</div>
 
 	<div id="hero-design" class="posr fl tu w8 z2">
@@ -247,18 +247,39 @@
 	<div id="foot-mes" class="padr1 posr z3 mht1">
 	<p class="tar"><q>Your website is the center of your digital ecosystem, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.</q> <br><br> <b> - Leland Dieno</b></p><br><br><br></div>
 
-	<div><a target="blank" href="https://wa.me/233245296501"><button id="hero-but" class="but bcolb fr colw lh fs4 magr1">Hire Me</button></a></div>
+	<div><a target="blank" href="https://wa.me/233245296501"><button id="hero-but-down" class="but bcolb fr colw lh fs4 magr1">Hire Me</button></a></div>
 	 
 	<div class="cb">
 	<br><br><br>
 	<hr><br><br>
 	<p class="">CopyRight @ 2022</p>
 	<br>
-	<ul class="nobul fs3"><li>ShowCase</li><li>Services</li><li>Stack</li><li>Socials</li></ul></div>
+	<ul class="nobul fs3"><li><a href="#showcase">ShowCase</a></li><li><a href="#service">Services</a></li><li><a href="#stack">Stack</a></li><li><a href="#socials">Socials</a></li></ul></div>
 	</div>
 </div>
 
-<!--<div onload="uxappear()" id="welcomeUX" class="posf t0 wt b0 z5"></div>-->
+<div id="welcomeUX" class="posf r0 t0 b0 cbcol1 z5">
+	<p id="pui" class="tac colb fs6">Hire me...<br/><span class="fs3"></span></p>
+</div>
+
+<script>
+
+	document.addEventListener( "load", OnDeviceReady, true );
+
+	window.setTimeout(function() {
+		const pui = document.getElementById("pui");
+		pui.style.display = "none"
+	}, 1500);
+	
+	function OnDeviceReady(){
+		const wui = document.getElementById("welcomeUX");
+		wui.style.width = '0vw';
+		wui.style.transitionDelay = "0.8s";
+
+		const pui = document.getElementById("pui");
+		pui.style.marginTop = "45vh"
+	}
+</script>
 <script type="text/javascript" src="js/resp.js"></script>
 </body>
 </html>

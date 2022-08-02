@@ -10,6 +10,8 @@ function myFunctionx(x) {
 	const nav = document.getElementById("nav");
 	const heroImage = document.getElementById("hero-image");
 	const heroLine = document.getElementById("hero-line");
+	const leftStack = document.getElementById("leftstack");
+	const rightStack = document.getElementById("rightstack");
 
 if(x.matches){
 		hero.className = "mxht";

@@ -69,6 +69,12 @@ padding-right: 5vw;
 	padding-bottom: 5%;
 }
 
+#welcomeUX { 
+  width: 100vw;
+  transition: width 0.8s linear;
+}
+ 
+
 .socialItems div{
 	padding-bottom: 5%;
 	padding-right: 5%;
@@ -104,6 +110,10 @@ a:hover{
 	text-decoration: overline;
 }
 
+a:hover svg{
+	opacity: 0.5;
+}
+
 button a:visited{ 
 	color: white;
 }
@@ -132,9 +142,6 @@ button:hover{
 	height:auto
 }
 
-#welcomeUX{
-	width: 100vw;
-}
 #hero-design {
 	height: 400px;
 }
@@ -148,7 +155,7 @@ button:hover{
 }
 
 #foot-mes{
-	background-image: linear-gradient(90deg, transparent,transparent, white);
+	background-image: linear-gradient(90deg, transparent,transparent,transparent,transparent,white,white,white,white);
 	/*background-color: rgba(255, 255, 255, 0.8);*/
 }
  
