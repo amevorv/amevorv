@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" href="https://font.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<title>Victor, The Saiyan</title>
 </head>
 <body class="mht sscroll">
@@ -31,10 +32,10 @@
 				</div>
 		</div>
 	</div>
-	<div id="hero-image" class="cb magl1 fl posr w3 z1"><img class="h10 w10" src="./images/hero@3x.png"/></div>
+	<div id="hero-image" class="cb magl1 fl posr w3 z1"><img class="h10 w10 fadeInRight ad" src="./images/hero@3x.png"/></div>
 
 	<div id="right-hero" class = "posr w3 fr h3 z3">
-		<div id="hero-quote" class="cbcol1 fs5 pad1 mw8 tac fr"><p>"A developer with over 6 years development experience and counting..."</p></div>
+		<div id="hero-quote" class="cbcol1 fs5 pad1 mw8 tac fr fadeInRight ad"><p>"A developer with over 6 years development experience and counting..."</p></div>
 		<div><a target="blank" href="https://wa.me/233245296501"><button id="hero-but" class="but bcolb colw fr magt2 padl2 padr2 lh fs6" onclick="">Let's Talk</button></a></div>
 	</div>
 
@@ -52,7 +53,7 @@
 	</div>
 	<div class="fjc cb posr">
 		<div class="wt pad1">
-			<div class="fl w5">
+			<div id="image1" class="fl w5">
 				<div class="h6 posr imageShow">
 				<image class="posa l0 t0 imageL" src="images/klodl2.png"/>
 				<image class="posa l2 t1 imageM" src="images/klodm2.png"/>
@@ -62,7 +63,7 @@
 			<div class="fr ovs w4 padt1 padl1 padb1 bcolw posr z3">
 				<p>KLODDEN APP<br><br>A clothing store to order customised dresses from your favorite Tailors</p>
 			</div>
-			<div class="cb fr w6">
+			<div id="image2" class="cb fr w6">
 				<div class="h6 posr imageShow">
 				<image class="posa r0 t0 imageL" src="images/yel.png"/>
 				<image class="posa r2 t1 imageM" src="images/yem.png"/>
@@ -75,7 +76,7 @@
 				<!--<button>GET</button>-->
 			</div>
 			
-			<div class="cb fl w5">
+			<div id="image3"  class="cb fl w5">
 				<div class="h6 posr imageShow">
 				<image class="posa l0 t0 imageL" src="images/hcrl.png"/>
 				<image class="posa l2 t1 imageM" src="images/hcrm.png"/>
@@ -86,7 +87,7 @@
 				<p>
 				HTML/CSS Renderer<br><br>A platform to auto generate div sections and common css templates for a headstart in web design</p>
 			</div>
-			<div class="cb fr w6">
+			<div id="image4" class="cb fr w6">
 				<div class="h6 posr imageShow">
 				<image class="posa r0 t0 imageL" src="images/samp2.png"/>
 				<image class="posa r2 t1 imageL" src="images/samp1.png"/>
@@ -113,7 +114,7 @@
 		<h2 class="magl1 magt1">Services</h2>
 		<hr class="w3 fl">
 	</div>
-	 <div class="cb lh fs4">
+	 <div id="service-list" class="cb lh fs4">
 	 	<br>
 	 	<ul class="magl1">
 	 		<li>Full Stack Development</li>
@@ -143,7 +144,7 @@
 	 		<hr>
 	 		<p>React</p>
 	 		<p>HTML/CSS</p>
-	 		<p>NextJS, VueJS, QuasarJS</p>
+	 		<p>NextJS, VueJS - QuasarJS</p>
 	 		</div>
 	 	</div>
 	 	<div class="w10 cbcol1">
@@ -259,25 +260,51 @@
 </div>
 
 <div id="welcomeUX" class="posf r0 t0 b0 cbcol1 z5">
-	<p id="pui" class="tac colb fs6">Hire me...<br/><span class="fs3"></span></p>
+	<p id="pui" class="tac colb fs6">Hire me...</p>
 </div>
 
 <script>
 
 	document.addEventListener( "load", OnDeviceReady, true );
-
 	window.setTimeout(function() {
 		const pui = document.getElementById("pui");
 		pui.style.display = "none"
-	}, 1500);
+	}, 2500);
 	
 	function OnDeviceReady(){
 		const wui = document.getElementById("welcomeUX");
 		wui.style.width = '0vw';
-		wui.style.transitionDelay = "0.8s";
+		wui.style.transitionDelay = "1.8s";
 
 		const pui = document.getElementById("pui");
 		pui.style.marginTop = "45vh"
+	}
+
+
+	document.addEventListener("scroll", animateonFocus);
+	
+	function animateonFocus(){
+		const boxes = [document.getElementById('image1'),document.getElementById('image2'),document.getElementById('image3'),document.getElementById('image4'),document.getElementById('buttons'), document.getElementById("hero-but"),document.getElementById('service-list')];
+		boxes.forEach((val,ind) => {
+			var fade = ind%2 == 0 || ind == 0 ? "fadeInRight" : "fadeInLeft"
+			isVisible(val)?val.classList.add(fade):val.classList.remove(fade)
+	})
+		const stack = document.querySelectorAll('#leftstack > div, #rightstack > div');
+		const stackArr = Array.from(stack)
+		stackArr.forEach(val=> isVisible(val)?val.classList.add("fadeIn"):val.classList.remove("fadeIn"))
+
+		const social =  document.getElementById("socials");
+		isVisible(social)?social.classList.add("fadeIn"):social.classList.remove("fadeIn");
+
+	}
+
+	function isVisible(box){
+			var rect = box.getBoundingClientRect();
+
+			return rect.bottom > 0 &&
+	        rect.right > 0 &&
+	        rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+	        rect.top < (window.innerHeight || document.documentElement.clientHeight)
 	}
 </script>
 <script type="text/javascript" src="js/resp.js"></script>
