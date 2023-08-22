@@ -1,11 +1,14 @@
 
 @import "general.css";
 
+
+
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
+  overflow: hidden;
   }
   @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
@@ -119,7 +122,7 @@ padding-right: 5vw;
 #buttons button{
 	padding: 5px;
 	min-width: 10vw;
-	font-size: large;
+	font-size: small;
 	margin-bottom: 1vh;
 	margin-right: 1vw;
 	background-color: black;
@@ -132,9 +135,14 @@ padding-right: 5vw;
 	background-color: grey;
 }
 
+.stacklist p{
+	color: green;
+}
+
 .stacklist p:last-child{
 	margin-top: 10%;
 	font-size: medium;
+	color: black;
 }
 
 #rightstack div{
@@ -213,6 +221,10 @@ button:hover{
 .imageShow{
 	min-height: 60vh;
 	width: 50vw
+}
+
+.imageShow image{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
 .imageM{
