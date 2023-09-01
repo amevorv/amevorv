@@ -286,7 +286,7 @@
 	document.addEventListener("scroll", animateonFocus);
 	
 	function animateonFocus(){
-		const boxes = [document.getElementById('image1'),document.getElementById('image2'),document.getElementById('image3'),document.getElementById('image4'),document.getElementById('buttons'), document.getElementById("hero-but"),document.getElementById('service-list')];
+		const boxes = [/*document.getElementById('image1'),document.getElementById('image2'),document.getElementById('image3'),document.getElementById('image4'),*/document.getElementById('buttons'), document.getElementById("hero-but"),document.getElementById('service-list')];
 		boxes.forEach((val,ind) => {
 			var fade = ind%2 == 0 || ind == 0 ? "fadeInRight" : "fadeInLeft"
 			isVisible(val)?val.classList.add(fade):val.classList.remove(fade)
