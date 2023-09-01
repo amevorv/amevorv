@@ -136,7 +136,7 @@ padding-right: 5vw;
 }
 
 .stacklist p{
-	color: green;
+	color: rgb(195, 181, 106);;
 }
 
 .stacklist p:last-child{
@@ -194,12 +194,15 @@ padding-right: 5vw;
 	background-color: #F2E9E9;
 }
 .cbcol2{
-	background-color: #BEEF9D;
+	background-color: rgb(195, 181, 106);
+}
+.ccol1{
+	color: rgb(195, 181, 106);
 }
 
 a{
 	text-decoration: none;
-	color: black;
+	color: rgb(195, 181, 106);;
 }
 
 a:hover{
@@ -258,6 +261,10 @@ button:hover{
 	background-image: linear-gradient(90deg, transparent,transparent,transparent,transparent,white,white,white,white);
 	/*background-color: rgba(255, 255, 255, 0.8);*/
 }
+
+.br5{
+  border-radius: 50%;
+}
  
 .dropdown-content {
   display: none;
@@ -274,7 +281,7 @@ button:hover{
   display: block;
 }
 
-@media screen and (max-width: 1000px){//smaller than
+@media screen and (max-width: 1000px){/*smaller than*/
  .imageShow{
 	min-height: 60vh;
 	width: 100vw
@@ -298,7 +305,7 @@ button:hover{
 	
 }
 
-@media screen and (min-width: 1000px){//bigger than
+@media screen and (min-width: 1000px){/*bigger than*/
  .imageShow{
 	min-height: 60vh;
 	width: 50vw
