@@ -230,6 +230,10 @@ button:hover{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
+.imageShow div:nth-of-type(1){
+  background-image: url("");
+}
+
 .imageM{
 	width:18vw; 
 	height:auto
