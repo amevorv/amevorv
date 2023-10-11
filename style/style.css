@@ -2,6 +2,77 @@
 @import "general.css";
 
 
+.background { 
+    overflow: hidden;
+}
+
+.background span {
+    width: 8vmin;
+    height: 8vmin;
+    border-radius: 8vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+    color: rgb(195, 181, 106);
+    top: 83%;
+    left: 46%;
+    animation-duration: 26s;
+    animation-delay: -20s;
+    transform-origin: 3vw -22vh;
+    box-shadow: -16vmin 0 2.897225427167629vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #ff990argb(195, 181, 106);
+    top: 29%;
+    left: 89%;
+    animation-duration: 13s;
+    animation-delay: -48s;
+    transform-origin: -4vw -17vh;
+    box-shadow: 16vmin 0 2.898952443214145vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: rgb(195, 181, 106);
+    top: 35%;
+    left: 1%;
+    animation-duration: 30s;
+    animation-delay: -24s;
+    transform-origin: 16vw 1vh;
+    box-shadow: 16vmin 0 2.1178946864111476vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: rgb(195, 181, 106);
+    top: 81%;
+    left: 86%;
+    animation-duration: 18s;
+    animation-delay: -15s;
+    transform-origin: -6vw -18vh;
+    box-shadow: 16vmin 0 2.6578142450025277vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: rgb(195, 181, 106);
+    top: 93%;
+    left: 20%;
+    animation-duration: 52s;
+    animation-delay: -14s;
+    transform-origin: -23vw -14vh;
+    box-shadow: -16vmin 0 2.18161381616088vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: rgb(195, 181, 106);
+    top: 79%;
+    left: 86%;
+    animation-duration: 24s;
+    animation-delay: -2s;
+    transform-origin: 5vw -17vh;
+    box-shadow: 16vmin 0 2.8866987611651354vmin currentColor;
+}
+
 
 .fadeIn {
   -webkit-animation-name: fadeIn;
@@ -18,6 +89,13 @@
   0% {opacity: 0;}
   100% {opacity: 1;}
   } 
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
 
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
@@ -169,7 +247,11 @@ padding-right: 5vw;
   transition: width 0.8s linear;
 }
  
-
+#welcomeUX div{ 
+  width: 50px;
+  height: 50px;
+}
+ 
 .socialItems div{
 	padding-bottom: 5%;
 	padding-right: 5%;
@@ -269,6 +351,13 @@ button:hover{
 .br5{
   border-radius: 50%;
 }
+
+.br1{
+  border-radius: 10em;
+  padding-top: 0.3em;
+  padding-left: 0.5em;
+  padding-bottom: 0.3em;
+}
  
 .dropdown-content {
   display: none;
@@ -286,9 +375,15 @@ button:hover{
 }
 
 @media screen and (max-width: 1000px){/*smaller than*/
- .imageShow{
+ #pui{
+ 		margin-top: 70vh;
+		font-size: large;
+		margin-left: 0;
+	}
+
+	.imageShow{
 	min-height: 60vh;
-	width: 100vw
+	width: 90vw
 }
 
 .imageM{
@@ -310,6 +405,13 @@ button:hover{
 }
 
 @media screen and (min-width: 1000px){/*bigger than*/
+ #pui{
+		font-size: x-large;
+		margin-left: 30%;
+		margin-top: 45vh;
+	}
+
+
  .imageShow{
 	min-height: 60vh;
 	width: 50vw

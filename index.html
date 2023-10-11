@@ -37,7 +37,7 @@
 
 	<div id="right-hero" class = "posr w3 fr h3 z3 oh">
 		<div id="hero-quote" class="cbcol1 fs5 pad1 mw8 tac fr fadeInRight ad"><p>"A developer with over 6 years development experience and counting..."</p></div>
-		<div><a target="blank" href="https://wa.me/233245296501"><button id="hero-but" class="but bcolb colw fr magt2 padl2 padr2 lh fs6" onclick="">Let's Talk</button></a></div>
+		<div><a target="blank" href="https://wa.me/233245296501"><button id="hero-but" class="but bcolb colw fr magt2 padl2 padr2 lh fs4" onclick=""></button></a></div>
 	</div>
 
 	<div id="hero-design" class="posr fl tu w8 z2">
@@ -56,9 +56,9 @@
 		<div class="mh10 w10 posr imageShow"><br/><br/>
 			
 			<!-- <div class="w10 bcolb"><image class="w4" src="./images/Group_1.jpg"/></div><br/><br/> -->
-			<div class="w10 bcolb"><image class="w10" src="./images/Allthrine.png"/></div><br/><br/>
-			<div class="w10 bcolb"><image class="w10" src="./images/Elect Connect Web Portal.png"/></div><br/><br/>
-			<div class="w10 bcolb"><image class="w10" src="./images/Group 18.jpg"/></div><br/><br/>
+			<div class="w10"><image class="w10" src="./images/Elect Connect Web Portal.png"/></div><br/><br/>
+			<div class="w10"><image class="w10" src="./images/Group 18.jpg"/></div><br/><br/><!-- 
+			<div class="w10"><image class="w10" src="./images/Allthrine.png"/></div><br/><br/> -->
 		<!--<div class="wt pad1">
 			<div id="image1" class="fl w5">
 				<div class="h6 posr imageShow">
@@ -262,8 +262,10 @@
 	</div>
 </div>
 
-<div id="welcomeUX" class="posf r0 t0 b0 cbcol1 z5">
-	<p id="pui" class="tac colb fs6">Hire me...</p>
+<div id="welcomeUX" class="posf r0 t0 b0 cbcol1 z5 background">
+	<span></span><span></span><span></span><span></span><span></span>
+	<center><button id="pui"  class="bcolb padr2 colw br1"> victorthesaiyan</button></center>
+	
 </div>
 
 <script>
@@ -278,9 +280,6 @@
 		const wui = document.getElementById("welcomeUX");
 		wui.style.width = '0vw';
 		wui.style.transitionDelay = "1.8s";
-
-		const pui = document.getElementById("pui");
-		pui.style.marginTop = "45vh"
 	}
 
 
@@ -289,12 +288,12 @@
 	function animateonFocus(){
 		const boxes = [/*document.getElementById('image1'),document.getElementById('image2'),document.getElementById('image3'),document.getElementById('image4'),*/document.getElementById('buttons'), document.getElementById("hero-but"),document.getElementById('service-list')];
 		boxes.forEach((val,ind) => {
-			var fade = ind%2 == 0 || ind == 0 ? "fadeInRight" : "fadeInLeft"
-			isVisible(val)?val.classList.add(fade):val.classList.remove(fade)
+			var fade = ind%2 == 0 || ind == 0 ? "fadeInRight" : "fadeInLeft";
+			isVisible(val)?val.classList.add(fade):val.classList.remove(fade);
 	})
 		const stack = document.querySelectorAll('#leftstack > div, #rightstack > div');
-		const stackArr = Array.from(stack)
-		stackArr.forEach(val=> isVisible(val)?val.classList.add("fadeIn"):val.classList.remove("fadeIn"))
+		const stackArr = Array.from(stack);
+		stackArr.forEach(val=> isVisible(val)?val.classList.add("fadeIn"):val.classList.remove("fadeIn"));
 
 		const social =  document.getElementById("socials");
 		isVisible(social)?social.classList.add("fadeIn"):social.classList.remove("fadeIn");
@@ -307,7 +306,7 @@
 			return rect.bottom > 0 &&
 	        rect.right > 0 &&
 	        rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
-	        rect.top < (window.innerHeight || document.documentElement.clientHeight)
+	        rect.top < (window.innerHeight || document.documentElement.clientHeight);
 	}
 </script>
 <script type="text/javascript" src="js/resp.min.js"></script>
