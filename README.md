@@ -3,8 +3,8 @@
 ### 🌟 About Me
 I'm a tech enthusiast with a knack for **full stack development**, **AI wizardry**, and all things **cloudy** (the good kind—think Google Cloud, not the weather 🌥️). Whether it's crafting **mobile apps that pop**, **sleek animations that wow**, or building **scalable, rock-solid architectures**, I'm your go-to problem-solver. 
 
-With Agile and Scrum as my superpowers, I always deliver **top-notch projects on time**. I'm also fueled by a mix of coffee and curiosity, making me **quick to learn new tech** and someone who loves tackling challenges head-on. Oh, and I’ve got a serious entrepreneurial streak—I don’t just solve problems, I dream up **cooler ways to fix them**.
 
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=brumnet&show_icons=true&theme=tokyonight)  
 ---
 
 ### 🛠️ My Tech Arsenal
@@ -36,7 +36,6 @@ Right now, I'm diving deep into **AI and cloud innovations**, working on project
 ---
 
 ### 📊 GitHub Stats—Bragging Rights Edition
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=brumnet&show_icons=true&theme=tokyonight)  
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=brumnet&layout=compact&theme=tokyonight)
 
 ---
