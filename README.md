@@ -9,40 +9,19 @@ With Agile and Scrum as my superpowers, I always deliver **top-notch projects on
 
 ### 🛠️ My Tech Arsenal
 
-#### 🤖 **Artificial Intelligence & Machine Learning**
-- OpenAPI, TensorFlow (Yes, I make machines *think*... well, almost)
+| **Category**             | **Technologies/Tools**                              |
+|---------------------------|----------------------------------------------------|
+| **AI/Machine Learning**   | OpenAPI, TensorFlow                                |
+| **Backend**               | NodeJS (Express), Java (Spring Boot)              |
+| **Cloud**                 | Google Cloud, AWS                                 |
+| **Databases**             | MongoDB, Firestore, Postgres, MySQL, Elastic Cache|
+| **DevOps**                | GitHub, GitHub Actions, Docker, Minikube          |
+| **Frontend**              | React, Next.js, Tailwind                          |
+| **Mobile**                | Flutter, React Native                             |
+| **Programming Languages** | JavaScript, Dart, Python, Java, Bash Scripting    |
+| **Project Management**    | Jira (Scrum, Kanban), Microsoft Project           |
+| **UI/UX**                 | Figma, Lunacy                                     |
 
-#### 🖥️ **Backend Wizardry**
-- NodeJS (Express), Java (Spring Boot)  
-  *(I keep the magic behind the scenes running smoothly.)*
-
-#### ☁️ **Cloud Sorcery**
-- Google Cloud, AWS (*The skies aren’t the limit!*)
-
-#### 💾 **Database Mastery**
-- MongoDB, Firestore, Postgres, MySQL, Elastic Cache  
-  *(I like my data structured… or not. I’m flexible like that.)*
-
-#### 🔧 **DevOps & Automation**
-- GitHub, GitHub Actions, Docker, Minikube (*Keep calm and automate all the things!*)
-
-#### 🎨 **Frontend Sorcery**
-- React, Next.js, Tailwind (*Because first impressions matter.*)
-
-#### 📱 **Mobile Magic**
-- Flutter, React Native (*For apps that look good *and* feel great.*)
-
-#### 🔤 **Languages I Speak (Besides Human)**
-- JavaScript, Dart, Python, Java, Bash Scripting
-
-#### 🗂️ **Project Management Mojo**
-- Jira (Scrum, Kanban), Microsoft Project  
-  *(Organized chaos, anyone?)*
-
-#### ✏️ **Design Vibes**
-- Figma, Lunacy (*Because the interface deserves love, too!*)
-
----
 
 ### 🚀 My Mission
 Right now, I'm diving deep into **AI and cloud innovations**, working on projects that **turn ideas into impactful solutions**. Always up for collaboration, because teamwork makes the dream work, right?
